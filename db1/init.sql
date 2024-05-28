@@ -1,7 +1,7 @@
 CREATE TABLE nobel (
-  winner text,
-  yr int,
-  subject text
+  winner TEXT,
+  yr INT,
+  subject TEXT
 );
 
 INSERT INTO
