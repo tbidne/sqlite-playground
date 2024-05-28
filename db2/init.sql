@@ -1,3 +1,7 @@
+-- Apparently these have to be on for foreign keys to work...sadface
+pragma foreign_keys;
+pragma foreign_keys = on;
+
 CREATE TABLE category (
   id INT NOT NULL PRIMARY KEY, -- Cannot be null, must be unique (primary key)
   subject TEXT NOT NULL UNIQUE -- Cannot be null, must be unique
@@ -20,7 +24,7 @@ CREATE TABLE nobel (
   PRIMARY KEY (winner, yr, subjectId), -- It is usually a good idea to have a separate column for
                                        -- the primary key (i.e. another integer). This is just an
                                        -- an example.
-  FOREIGN KEY(subjectId) REFERENCES category(subjectId) -- This must match the category table
+  FOREIGN KEY(subjectId) REFERENCES category(id) -- This must match the category table
 );
 
 INSERT INTO

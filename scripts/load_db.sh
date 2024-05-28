@@ -1,0 +1,1 @@
+sqlite3 "bin/$1.sqlite"
