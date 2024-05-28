@@ -1,0 +1,4 @@
+-- Apparently these have to be on for foreign keys to work...sadface
+
+pragma foreign_keys;
+pragma foreign_keys = on;

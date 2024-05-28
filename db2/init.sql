@@ -1,7 +1,3 @@
--- Apparently these have to be on for foreign keys to work...sadface
-pragma foreign_keys;
-pragma foreign_keys = on;
-
 CREATE TABLE category (
   id INT NOT NULL PRIMARY KEY, -- Cannot be null, must be unique (primary key)
   subject TEXT NOT NULL UNIQUE -- Cannot be null, must be unique

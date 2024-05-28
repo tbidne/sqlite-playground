@@ -7,7 +7,7 @@
 ```sh
 $ mkdir bin
 $ sqlite3 bin/db1.sqlite < db1/init.sql
-$ sqlite3
+$ sqlite3 -init .sqliterc
 ```
 
 ## Verify schema
